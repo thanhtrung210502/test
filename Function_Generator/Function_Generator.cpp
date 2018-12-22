@@ -71,7 +71,7 @@ uint16_t vrBtn1HoldCnt = 0;
 uint16_t vrBtn2HoldCnt = 0;
 uint8_t vrDelta1 = 10;
 uint8_t vrDelta2 = 10;
-//void EX_ISP();
+void EX_ISP();
 
 void setup()
 {
@@ -260,16 +260,16 @@ ISR (TIMER2_OVF_vect)
 	digitalWrite(13, !digitalRead(13));
 }
 
-//void EX_ISP() {
-//
-//	if ( digitalRead(3) ) {
-//		vrEncoderCount++;
-//		if (vrEncoderCount > 2000)
-//			vrEncoderCount = 2000;
-//	}
-//	else {
-//		vrEncoderCount--;
-//		if (vrEncoderCount < 0)
-//			vrEncoderCount = 0;
-//	}
-//}
+void EX_ISP() {
+
+	if ( digitalRead(3) ) {
+		vrEncoderCount++;
+		if (vrEncoderCount > 2000)
+			vrEncoderCount = 2000;
+	}
+	else {
+		vrEncoderCount--;
+		if (vrEncoderCount < 0)
+			vrEncoderCount = 0;
+	}
+}

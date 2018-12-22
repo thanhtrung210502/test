@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+libraries=["MCUFRIEND_kbv",{"package"\:"arduino","platform"\:"avr","library"\:"SPI"},"Adafruit GFX Library"]

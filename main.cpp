@@ -2,6 +2,6 @@
 
 int main()
 {
-    int x = 9;
-    std::cout << "Hello Trung, x = " << x << std::endl;
+    int x = 2;
+    std::cout << "Hello kitty, x = " << x << std::endl;
 }
